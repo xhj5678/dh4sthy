@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
 <title>胜天国际</title>
 
 <style>
@@ -17,7 +16,7 @@
 body{
   min-height:100vh;
   background:
-    radial-gradient(circle at 50% 0%, #2a2a4f 0%, #0b0b16 60%);
+    radial-gradient(circle at 50% 0%, #2a2a4f 0%, #0b0b16 65%);
   font-family:
     "PingFang SC",
     "HarmonyOS Sans",
@@ -33,59 +32,63 @@ body{
 .h5{
   width:100%;
   max-width:390px;
-  padding:28px 18px 40px;
+  padding:26px 18px 40px;
   text-align:center;
 }
 
-/* LOGO */
-.logo-box{
+/* 顶部 APP LOGO */
+.app-logo{
   width:110px;
   height:110px;
-  margin:10px auto 18px;
-  border-radius:26px;
-  background:linear-gradient(145deg,#2e2e55,#14142a);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:700;
-  font-size:28px;
-  color:#f2cf8b;
+  margin:8px auto 16px;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 10px 26px rgba(0,0,0,.45);
+}
+.app-logo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
 /* 副标题 */
 .sub{
   font-size:13px;
   font-weight:500;
-  letter-spacing:0.5px;
+  letter-spacing:.5px;
   color:#d6c48a;
   margin-bottom:18px;
 }
 
 /* 绿色状态条 */
 .notice{
-  margin:0 auto 26px;
+  margin:0 auto 24px;
   padding:14px 10px;
   border-radius:14px;
   background:linear-gradient(90deg,#1f4f39,#217a4f);
   color:#63ff9b;
   font-size:15px;
   font-weight:600;
-  letter-spacing:0.5px;
+  letter-spacing:.5px;
 }
 
-/* 主标题 */
-.title{
-  font-size:22px;
-  font-weight:700;
-  letter-spacing:1px;
-  margin-bottom:6px;
+/* 中部大 LOGO */
+.title-logo{
+  width:100%;
+  max-width:300px;
+  margin:6px auto 8px;
+}
+.title-logo img{
+  width:100%;
+  height:auto;
+  display:block;
 }
 
 .year{
   font-size:13px;
   font-weight:500;
   color:#b5b5b5;
-  margin-bottom:26px;
+  margin-bottom:24px;
 }
 
 /* 金色按钮 */
@@ -98,7 +101,7 @@ body{
   text-decoration:none;
   font-size:15px;
   font-weight:600;
-  letter-spacing:0.6px;
+  letter-spacing:.6px;
   color:#3a2a00;
   background:linear-gradient(180deg,#ffe7a8,#e8b65b);
   box-shadow:0 8px 18px rgba(232,182,91,.35);
@@ -112,7 +115,6 @@ body{
 .footer{
   margin-top:30px;
   font-size:12px;
-  font-weight:400;
   color:#9e9e9e;
   line-height:1.7;
 }
@@ -122,7 +124,10 @@ body{
 <body>
 <div class="h5">
 
-  <div class="logo-box">NG</div>
+  <!-- 顶部 NG CASINO 图 -->
+  <div class="app-logo">
+    <img src="ng_app.png.jpg" alt="NG CASINO">
+  </div>
 
   <div class="sub">
     NG集团 · 选择大于努力 · 相信品牌的力量！
@@ -132,10 +137,14 @@ body{
     平台已正式上线！欢迎加入！
   </div>
 
-  <div class="title">胜天国际 · 胜者无惧</div>
+  <!-- 胜天国际 大 LOGO -->
+  <div class="title-logo">
+    <img src="ng_title.png.jpg" alt="胜天国际">
+  </div>
+
   <div class="year">2025 · 最后一匹黑马</div>
 
-  <!-- 四个跳转 -->
+  <!-- 四个跳转按钮 -->
   <a class="btn" href="https://lejva.tprsmi.com/app/register.php?site_id=1058&topId=26369&selfPlanId=197246" target="_blank">
     总代注册 ·【最高总代点位】
   </a>
